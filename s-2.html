@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+   <script src="js/jquery-3.4.1.min.js"></script>
+   <title>untitled</title>
+
+   <script type="text/javascript">
+      $(document).ready(function() {
+         $(".flip_2020").click(function() {
+            $(".panel_2020").slideToggle("slow");
+         });
+         $(".flip_2021").click(function() {
+            $(".panel_2021").slideToggle("slow");
+         });
+      });
+   </script>
+
+   <!-- 레이아웃 -->
+   <style type="text/css">
+      html, body {
+         height: 100%;
+         width: 100%;
+         margin: 0 auto;
+         padding: 0;
+      }
+      #h {
+         width: 98%;
+         height: 16%;
+         padding: 1%;
+      }
+      #n {
+         position: relative;
+         width: 100%;
+         height: 7%;
+      }
+      #s {
+         position: relative;
+         width: 95%;
+         padding: 2.5%;
+      }
+      #f {
+           height:100px;
+           margin-top:30px;
+           border-top:solid 1px #bbbbbb;
+        }
+   </style>
+
+  <!-- 스타일 -->
+   <style type="text/css">
+      table {
+         text-align: center;
+         width: 80%;
+      }
+      table tr td {
+         vertical-align: top;
+         padding: 1%;
+         width: 20%;
+      }
+      div.panel_2020 {
+         display: none;
+         padding: 5%;
+         background-color: #FFF;
+         border: solid 1px #a5a5a5;
+      }
+      div.panel_2021 {
+         display: none;
+         padding: 5%;
+         background-color: #FFF;
+         border: solid 1px #a5a5a5;
+      }
+      button {
+         background: transparent;
+         border: none;
+         color: #000;
+         line-height: 3em;
+      }
+      button:hover {
+         text-decoration: underline;
+         cursor: pointer;
+      }
+      a {
+         text-decoration: none;
+         color: rgba(0, 0, 0, 0.5);
+      }
+      a:hover{
+         transition: 0.5s;
+         color: #000;
+         cursor: pointer;
+      }
+      #right{
+        width:650px;
+        height:600px;
+        textalign:center;
+        background-color:#fff;
+      }
+      #main_title{
+        width:572px;
+        padding:10px;
+        border:solid 3px #444444;
+        margin:24px 0 0 24px;
+        color:black;
+        font-weight:bold;
+      }
+      #main_img{
+        padding:15px 0 0 24px;
+      }
+      #thumnail{
+        padding:30px 0 0 30px;
+      }
+      #thumnail #move_left{
+        float:left;
+        margin:20px 5px 0 40px;
+      }
+      #thumnail #photos{
+        float:left;
+        margin:3px 0 0 0;
+        padding-right: 30px;
+      }
+      #thumnail #move_right{
+        float:left;
+        margin:20px 0 0 20px;
+      }
+      #thumnail #photos li{
+        display:inline;
+        margin-left:10px;
+      }
+      #thumnail #photos img{
+        border:solid 5px #3d3d3d;
+      }
+      #thumnail #photos a:hover img{
+        border:solid 5px #ffffff;
+      }
+      .main {
+         width: 90%;
+         margin: 5%;
+         column-count: 1;
+         column-gap: 5px;
+        }
+        .main figure {
+           margin: 0;
+           padding: 5px;
+        }
+        figure figcaption {
+          padding: 10px;
+          margin-top: 10px;
+        }
+  </style>
+</head>
+<body>
+   <header id="h">
+      <center>
+         <a href="main1.html"><img src="img/logo1.png" width="100px"></a>
+      </center>
+   </header>
+   <nav id="n">
+      <center>
+         <table>
+            <tr>
+               <td>&nbsp;</td>
+               <td>
+                  <div id="n2020">
+                     <div class="flip_2020">
+                        <button>2020</button>
+                     </div>
+                     <div class="panel_2020">
+                        <p><a href="cd.html">Contents Design</a></p>
+                        <p><a href="md.html">Media Design</a></p>
+                        <p><a href="3d.html">3D Design</a></p>
+                        <p><a href="la.html">Liberal Arts</a></p>
+                     </div>
+                  </div>
+               </td>
+               <td>
+                  <div id="n2021">
+                     <div class="flip_2021">
+                        <button>2021</button>
+                     </div>
+                     <div class="panel_2021">
+                        <p><a href="vd.html">Visual Design</a></p>
+                        <p><a href="ui.html">UIUX Design</a></p>
+                        <p><a href="web.html">Web Republishing</a></p>
+                        <p><a href="ps.html">Project Studio</a></p>
+                     </div>
+                  </div>
+               </td>
+               <td>
+                  <div id="ctc">
+                     <a href="contact.html"><button>Contact</button></a>
+                  </div>
+               </td>
+               <td>&nbsp;</td>
+            </tr>
+         </table>
+      </center>
+  <section id="s">
+    <center>
+    <div id="right">
+      <div id="main_title">
+        2. "Beach"
+      </div>
+      <img id="main_img" src="img/2020/s2.jpg" width="600px" height="377px">
+      <div id="thumnail">
+        <img id="move_left" src="img/left.svg" width="21px">
+          <ul id="photos">
+            <li><a href="3d.html"><img src="img/2020/s1.jpg" width="50px"></a></li>
+            <li><a href="s-2.html"><img src="img/2020/s2.jpg" width="50px"></a></li>
+            <li><a href="s-3.html"><img src="img/2020/s3.jpg" width="50px"></a></li>
+            <li><a href="s-4.html"><img src="img/2020/uni2.jpg" width="50px"></a></li>
+            <li><a href="s-5.html"><img src="img/2020/s4.jpg" width="50px"></a></li>
+          </ul>
+          <img id="move_right" src="img/right.svg" width="21px">
+      </div> <br><br><br>
+      <figcaption>Unity 프로그램을 사용하여 카메라를 설치하여 장소를 이동하고 자동차, 조명 공, 캐릭터 등등
+      스크립트를 넣어 애니메이션을 구동시켜보았다.</figcaption>
+    </div>
+    <figure>
+      <video src="3d.mp4" width="600px" controls autoplay></video>
+      <figcaption> 3D MAX 프로그램을 사용하여 코카콜라 사물의 형태의 구조적 특징을 파악하여 모델링하고, <br>
+      캐릭터 리깅작업을 통해 좀 더 자세하고 정교한 움직임을 구현해보았다. </figcaption>
+    </figure>
+  </section>
+
+
+  <footer id="f">
+    <center><p>Copyright 2021. Taeri Kwon. All rights reserved.</p></center>
+  </footer>
+</body>
+</html>

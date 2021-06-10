@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<title>Contents Design</title>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".flip_2020").click(function() {
+				$(".panel_2020").slideToggle("slow");
+			});
+			$(".flip_2021").click(function() {
+				$(".panel_2021").slideToggle("slow");
+			});
+		});
+	</script>
+
+	<!-- 레이아웃 -->
+	<style type="text/css">
+		html, body {
+			height: 100%;
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+		}
+		#h {
+			width: 98%;
+			height: 16%;
+			padding: 1%;
+		}
+		#n {
+			position: relative;
+			width: 100%;
+			height: 7%;
+		}
+		section#main {
+			height:650px;
+      margin-top:20px;
+
+		}
+    section#main li{
+      list-style-type:none;
+      display:inline;
+    }
+    section#main .item{
+      text-align:center;
+      margin:0px 6px 0 0;
+    }
+    section#main .item#sushi{
+      padding: 10px;
+    }
+		#f {
+			height:100px;
+      margin-top:30px;
+      border-top:solid 1px #bbbbbb;
+		}
+	</style>
+
+  <!-- 스타일 -->
+	<style type="text/css">
+		table {
+			text-align: center;
+			width: 80%;
+		}
+		table tr td {
+			vertical-align: top;
+			padding: 1%;
+			width: 20%;
+		}
+		div.panel_2020 {
+			display: none;
+			padding: 5%;
+			background-color: #FFF;
+			border: solid 1px #a5a5a5;
+		}
+		div.panel_2021 {
+			display: none;
+			padding: 5%;
+			background-color: #FFF;
+			border: solid 1px #a5a5a5;
+		}
+		button {
+			background: transparent;
+			border: none;
+			color: #000;
+			line-height: 3em;
+		}
+		button:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		a {
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.5);
+		}
+		a:hover{
+			transition: 0.5s;
+			color: #000;
+			cursor: pointer;
+		}
+  </style>
+</head>
+<body>
+	<header id="h">
+		<center>
+			<a href="main1.html"><img src="img/logo1.png" width="100px"></a>
+		</center>
+	</header>
+	<nav id="n">
+		<center>
+			<table>
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<div id="n2020">
+							<div class="flip_2020">
+								<button>2020</button>
+							</div>
+							<div class="panel_2020">
+								<p><a href="cd.html">Contents Design</a></p>
+								<p><a href="md.html">Media Design</a></p>
+								<p><a href="3d.html">3D Design</a></p>
+
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="n2021">
+							<div class="flip_2021">
+								<button>2021</button>
+							</div>
+							<div class="panel_2021">
+								<p><a href="vd.html">Visual Design</a></p>
+								<p><a href="ui.html">UIUX Design</a></p>
+								<p><a href="web.html">Web publishing</a></p>
+
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="ctc">
+							<a href="contact.html"><button>Contact</button></a>
+						</div>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</center> <br>
+
+  <section id="main">
+    <div id="title">
+     <center>
+      <h2>카드뉴스 "데이비드 호크니"</h2>
+      <p>2020-10-28</p>
+      </center>
+    </div>
+
+    <div class="item">
+      <ul>
+        <li><img src="img/2020/h1.jpg" width="300px" height="300px"></li>
+        <li><img src="img/2020/h2.jpg" width="300px" height="300px"></li>
+        <li><img src="img/2020/h3.jpg" width="300px" height="300px"></li>
+        <li><img src="img/2020/h4.jpg" width="300px" height="300px"></li>
+        <li><img src="img/2020/h5.jpg" width="300px" height="300px"></li>
+        <li><img src="img/2020/h6.jpg" width="300px" height="300px"></li>
+        <li><img src="img/2020/h8.jpg" width="300px" height="300px"></li>
+        <li><img src="img/2020/h9.jpg" width="300px" height="300px"></li>
+      </ul> <br><br><br>
+
+      <div id="title">
+       <center>
+        <h2>애니어그램 "SUSHI"</h2>
+        <p>2020-5-17</p>
+        </center>
+      </div>
+      <div class="item">
+        <ul id="sushi">
+          <li><img src="img/2020/sushi_main.jpg" width="600px"></li>
+          <li><img src="img/2020/sushi_sub1.jpg" width="600px"></li>
+          <li><img src="img/2020/sushi_sub2.jpg" width="600px"></li>
+          <li><img src="img/2020/sushi_sub3.jpg" width="600px"></li>
+        </ul>
+
+      <footer id="f">
+        <center><p>Copyright 2021. Taeri Kwon. All rights reserved.</p></center>
+      </footer>
+  </section>
+</body>
+</html>

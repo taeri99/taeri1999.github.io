@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<title>Contact</title>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".flip_2020").click(function() {
+				$(".panel_2020").slideToggle("slow");
+			});
+			$(".flip_2021").click(function() {
+				$(".panel_2021").slideToggle("slow");
+			});
+		});
+	</script>
+
+	<!-- 레이아웃 -->
+	<style type="text/css">
+		html, body {
+			height: 100%;
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+		}
+		#h {
+			width: 98%;
+			height: 16%;
+			padding: 1%;
+		}
+		#n {
+			position: relative;
+			width: 100%;
+			height: 7%;
+		}
+		#s {
+			position: relative;
+			width: 95%;
+			padding: 2.5%;
+		}
+    #f {
+         height:100px;
+         margin-top:30px;
+         border-top:solid 1px #bbbbbb;
+      }
+	</style>
+
+	<!-- 스타일 -->
+	<style type="text/css">
+		nav table {
+			text-align: center;
+			width: 80%;
+		}
+		nav table tr td {
+			vertical-align: top;
+			padding: 1%;
+			width: 20%;
+		}
+		div.panel_2020 {
+			display: none;
+			padding: 5%;
+			background-color: #FFF;
+			border: solid 1px #a5a5a5;
+		}
+		div.panel_2021 {
+			display: none;
+			padding: 5%;
+			background-color: #FFF;
+			border: solid 1px #a5a5a5;
+		}
+		nav button {
+			background: transparent;
+			border: none;
+			color: #000;
+			line-height: 3em;
+		}
+		button:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		a {
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.5);
+		}
+		a:hover{
+			transition: 0.5s;
+			color: #000;
+			cursor: pointer;
+		}
+		div.ctcinfo {
+			width: 60%;
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+		.ctcinfo table {
+			width: 100%;
+			text-align: left;
+			padding: 5%;
+		}
+		.ctcinfo textarea {
+			width: 100%;
+		}
+		.ctcinfo button {
+			float: right;
+			padding-right: 5%;
+			padding-left: 5%;
+			color: #fff;
+			background-color: #000;
+			border-radius: 50px 50px 50px 50px;
+		}
+		.ctcinfo button:hover {
+			text-decoration: none;
+			transition: 0.5s;
+			color: #ffd400;
+		}
+		div.ctcitem {
+			padding: 3%;
+			background-color: #ffd400;
+			color: #666;
+      border-radius: 10px;
+		}
+		.ctcitem input[type="text"] {
+			width: 80%;
+		}
+		div.ctcmsg {
+			padding: 3%;
+			background-color: #ddd;
+      border:3px;
+      border-radius:10px;
+			height: 145px;
+			color: #666;
+		}
+		textarea {
+			background: transparent;
+		    border: none;
+			width: 100%;
+			height: 85%;
+		}
+		input[type="text"] {
+			background: transparent;
+		    border: none;
+		}
+	</style>
+</head>
+<body>
+	<header id="h">
+		<center>
+			<a href="main1.html"><img src="img/logo1.png" width="100px"></a>
+		</center>
+	</header>
+	<nav id="n">
+		<center>
+			<table>
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<div id="n2020">
+              <div class="flip_2020">
+								<button>2020</button>
+							</div>
+							<div class="panel_2020">
+								<p><a href="cd.html">Contents Design</a></p>
+								<p><a href="md.html">Media Design</a></p>
+								<p><a href="3d.html">3D Design</a></p>
+
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="n2021">
+							<div class="flip_2021">
+								<button>2021</button>
+							</div>
+							<div class="panel_2021">
+								<p><a href="vd.html">Visual Design</a></p>
+								<p><a href="ui.html">UIUX Design</a></p>
+								<p><a href="web.html">Web publishing</a></p>
+
+							</div>
+						</div>
+					</td>
+					<td>
+						<div id="ctc">
+							<a href="contact.html"><button>Contact</button></a>
+						</div>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</center>
+	<section id="s">
+		<div class="ctcinfo">
+			<table>
+				<tr>
+					<td colspan="4">
+						<center><img src="img/me.jpg" width="250px"></center>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4"><center>
+						<h2 style="line-height: 0.1em;">Contact Me!</h2>
+						<p>muffin_88@naver.com</p>
+					</center></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="ctcitem">
+							Name:&nbsp;&nbsp;<input type="text">
+						</div>
+					</td>
+					<td rowspan="3">
+						<div class="ctcmsg">
+							Message: <textarea></textarea>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="ctcitem">
+							E-Mail:&nbsp;&nbsp;<input type="text">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="ctcitem">
+							Phone:&nbsp;&nbsp;<input type="text">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button class="subbtn">Submit</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<footer id="f">
+		<center><p>Copyright 2021. Taeri Kwon. All rights reserved.</p></center>
+	</footer>
+</body>
+</html>

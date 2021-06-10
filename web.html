@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+   <script src="js/jquery-3.4.1.min.js"></script>
+   <title>Web Publishing</title>
+
+   <script type="text/javascript">
+      $(document).ready(function() {
+         $(".flip_2020").click(function() {
+            $(".panel_2020").slideToggle("slow");
+         });
+         $(".flip_2021").click(function() {
+            $(".panel_2021").slideToggle("slow");
+         });
+      });
+   </script>
+
+   <!-- 레이아웃 -->
+   <style type="text/css">
+      html, body {
+         height: 100%;
+         width: 100%;
+         margin: 0 auto;
+         padding: 0;
+      }
+      #h {
+         width: 98%;
+         height: 16%;
+         padding: 1%;
+      }
+      #n {
+         position: relative;
+         width: 100%;
+         height: 7%;
+      }
+      #s {
+         position: relative;
+         width: 95%;
+         padding: 2.5%;
+      }
+      #f {
+  			height:100px;
+        margin-top:30px;
+        border-top:solid 1px #bbbbbb;
+  		}
+   </style>
+
+  <!-- 스타일 -->
+   <style type="text/css">
+      table {
+         text-align: center;
+         width: 80%;
+      }
+      table tr td {
+         vertical-align: top;
+         padding: 1%;
+         width: 20%;
+      }
+      div.panel_2020 {
+         display: none;
+         padding: 5%;
+         background-color: #FFF;
+         border: solid 1px #a5a5a5;
+      }
+      div.panel_2021 {
+         display: none;
+         padding: 5%;
+         background-color: #FFF;
+         border: solid 1px #a5a5a5;
+      }
+      button {
+         background: transparent;
+         border: none;
+         color: #000;
+         line-height: 3em;
+      }
+      button:hover {
+         text-decoration: underline;
+         cursor: pointer;
+      }
+      a {
+         text-decoration: none;
+         color: rgba(0, 0, 0, 0.5);
+      }
+      a:hover{
+         transition: 0.5s;
+         color: #000;
+         cursor: pointer;
+      }
+      .main {
+			width: 90%;
+			margin: 5%;
+			column-count: 2;
+			column-gap: 5px;
+  		}
+  		.main figure {
+  			margin: 0;
+  			padding: 5px;
+  		}
+  		.main figure img {
+  			width: 100%;
+  		}
+  		div.def {
+  			width: 90%;
+  			margin: 5%;
+  		}
+      .ctcinfo button {
+  			float: right;
+  			padding-right: 5%;
+  			padding-left: 5%;
+  			color: #000;
+  			background-color: #000;
+  			border-radius: 50px 50px 50px 50px;
+  		}
+
+
+  </style>
+</head>
+<body>
+   <header id="h">
+      <center>
+         <a href="main1.html"><img src="img/logo1.png" width="100px"></a>
+      </center>
+   </header>
+   <nav id="n">
+      <center>
+         <table>
+            <tr>
+               <td>&nbsp;</td>
+               <td>
+                  <div id="n2020">
+                     <div class="flip_2020">
+                        <button>2020</button>
+                     </div>
+                     <div class="panel_2020">
+                        <p><a href="cd.html">Contents Design</a></p>
+                        <p><a href="md.html">Media Design</a></p>
+                        <p><a href="3d.html">3D Design</a></p>
+
+                     </div>
+                  </div>
+               </td>
+               <td>
+                  <div id="n2021">
+                     <div class="flip_2021">
+                        <button>2021</button>
+                     </div>
+                     <div class="panel_2021">
+                        <p><a href="vd.html">Visual Design</a></p>
+                        <p><a href="ui.html">UIUX Design</a></p>
+                        <p><a href="web.html">Web publishing</a></p>
+
+                     </div>
+                  </div>
+               </td>
+               <td>
+                  <div id="ctc">
+                     <a href="contact.html"><button>Contact</button></a>
+                  </div>
+               </td>
+               <td>&nbsp;</td>
+            </tr>
+         </table>
+      </center>
+  <section id="s">
+    <div id="title">
+     <center>
+      <h2>"VANS" 웹사이트 리뉴얼</h2>
+      <p>2021-10-20</p>
+
+      </center>
+    </div>
+    <div class="main">
+      <center>
+        <figure><img src="img/2020/vans.png" width="150px"></figure>
+        <figure><img src="img/2020/vans2.png" width="150px"></figure>
+      </center> <br><br><br><br>
+    </div>
+    <div id="title">
+     <center>
+      <h2>영화 "SING STREET" 웹사이트</h2>
+      <p>2021-04-23</p>
+      </center>
+    </div>
+    <div class="main">
+      <center>
+        <figure><img src="img/2021/sing1.png" width="100px"></figure>
+        <figure><img src="img/2021/sing4.png" width="100px"></figure>
+        <figure><img src="img/2021/sing2.png" width="100px"></figure>
+        <figure><img src="img/2020/sing3.png" width="100px"></figure>
+      </center>
+    </div>
+
+  </section>
+  <footer id="f">
+    <center><p>Copyright 2021. Taeri Kwon. All rights reserved.</p></center>
+  </footer>
+</body>
+</html>

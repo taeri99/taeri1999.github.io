@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+   <script src="js/jquery-3.4.1.min.js"></script>
+   <title>Media Design</title>
+
+   <script type="text/javascript">
+      $(document).ready(function() {
+         $(".flip_2020").click(function() {
+            $(".panel_2020").slideToggle("slow");
+         });
+         $(".flip_2021").click(function() {
+            $(".panel_2021").slideToggle("slow");
+         });
+      });
+   </script>
+
+   <!-- 레이아웃 -->
+   <style type="text/css">
+      html, body {
+         height: 100%;
+         width: 100%;
+         margin: 0 auto;
+         padding: 0;
+      }
+      #h {
+         width: 98%;
+         height: 16%;
+         padding: 1%;
+      }
+      #n {
+         position: relative;
+         width: 100%;
+         height: 7%;
+      }
+      #s {
+         position: relative;
+         width: 95%;
+         padding: 2.5%;
+      }
+      #f {
+           height:100px;
+        margin-top:30px;
+        border-top:solid 1px #bbbbbb;
+        }
+   </style>
+
+  <!-- 스타일 -->
+   <style type="text/css">
+      table {
+         text-align: center;
+         width: 80%;
+      }
+      table tr td {
+         vertical-align: top;
+         padding: 1%;
+         width: 20%;
+      }
+      div.panel_2020 {
+         display: none;
+         padding: 5%;
+         background-color: #FFF;
+         border: solid 1px #a5a5a5;
+      }
+      div.panel_2021 {
+         display: none;
+         padding: 5%;
+         background-color: #FFF;
+         border: solid 1px #a5a5a5;
+      }
+      button {
+         background: transparent;
+         border: none;
+         color: #000;
+         line-height: 3em;
+      }
+      button:hover {
+         text-decoration: underline;
+         cursor: pointer;
+      }
+      a {
+         text-decoration: none;
+         color: rgba(0, 0, 0, 0.5);
+      }
+      a:hover{
+         transition: 0.5s;
+         color: #000;
+         cursor: pointer;
+      }
+      .main {
+         width: 90%;
+         margin: 5%;
+         column-count: 2;
+         column-gap: 5px;
+        }
+        .main figure {
+           margin: 0;
+           padding: 5px;
+        }
+        figure figcaption {
+          padding: 10px;
+          margin-top: 10px;
+        }
+        figure p{
+          font-size:small
+        }
+  </style>
+</head>
+<body>
+   <header id="h">
+      <center>
+         <a href="main1.html"><img src="img/logo1.png" width="100px"></a>
+      </center>
+   </header>
+   <nav id="n">
+      <center>
+         <table>
+            <tr>
+               <td>&nbsp;</td>
+               <td>
+                  <div id="n2020">
+                     <div class="flip_2020">
+                        <button>2020</button>
+                     </div>
+                     <div class="panel_2020">
+                        <p><a href="cd.html">Contents Design</a></p>
+                        <p><a href="md.html">Media Design</a></p>
+                        <p><a href="3d.html">3D Design</a></p>
+
+                     </div>
+                  </div>
+               </td>
+               <td>
+                  <div id="n2021">
+                     <div class="flip_2021">
+                        <button>2021</button>
+                     </div>
+                     <div class="panel_2021">
+                        <p><a href="vd.html">Visual Design</a></p>
+                        <p><a href="ui.html">UIUX Design</a></p>
+                        <p><a href="web.html">Web publishing</a></p>
+
+                     </div>
+                  </div>
+               </td>
+               <td>
+                  <div id="ctc">
+                     <a href="contact.html"><button>Contact</button></a>
+                  </div>
+               </td>
+               <td>&nbsp;</td>
+            </tr>
+         </table>
+      </center>
+  <section id="s">
+    <div class="main">
+      <center>
+        <figure>
+          <video src="md1.mp4" width="500px" controls autoplay muted></video>
+          <figcaption><b>VSCO 사진편집어플 모션그래픽 1</b></figcaption>
+          <p>어플 내에 있는 기능들을 주로 설명하고 소개하는
+          <br>모션그래픽으로 재미있게 표현해보고자 했다.</p>
+        </figure>
+
+        <figure>
+          <video src="md2.mp4" width="500px" controls autoplay muted></video>
+          <figcaption><b>VSCO 사진편집어플 모션그래픽 2</b></figcaption>
+          <p>사진의 Before / After 를 보여주고, 필터의 종류들과
+          <br>사용된 효과들이 극대화될 수 있는 모션으로 제작하였다.</p>
+        </figure>
+
+        <figure>
+          <video src="mask.mp4" width="500px" controls autoplay muted></video>
+          <figcaption><b> KF94 마스크 공장 이야기 </b></figcaption>
+          <p>영화 '미션임파서블 OST'를 사용하여 마스크 공장에서의 생산 · 유통 과정을
+          <br>긴장감 있게 담아낸 이야기이다. "마스크는 우리의 작은 히어로!" </p>
+        </figure>
+
+        <figure>
+          <video src="traveler.mp4" width="500px" controls autoplay muted></video>
+          <figcaption><b> SHAUN - TRAVELER M/V  </b></figcaption>
+          <p> 코로나 팬데믹 이전에 친구들과 여행을 갔던 걸 추억하면서
+          <br>여행의 설레임과 그리움을 회상하는 스토리이다. </p>
+        </figure>
+      </center>
+    </div>
+  </section>
+
+  <footer id="f">
+    <center><p>Copyright 2021. Taeri Kwon. All rights reserved.</p></center>
+  </footer>
+</body>
+</html>
